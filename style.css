@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 100px auto; 
+    display: flex;
+}
+.product-img img{
+    width: 325px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product-content{
+    padding: 20px 30px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+    height: 488px;
+}
+#short-title{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 0px 20px 0px;
+}
+#product-title{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    padding: 5px 0px 20px 0px;
+}
+#product-desc{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+#product-price{
+    display: flex;
+    padding: 20px 0px 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+#new-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 20px;
+}
+#old-price{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.center-cart{
+    text-align: center;
+}
+#mobileImg{
+    display: none;
+}
+#cart{
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 40%, 18%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+@media(max-width: 375px){
+    .container{
+        display: block;
+        /* text-align: center; */
+        margin: 20px 30px;
+    }
+    #short-title{
+        padding: 10px 0px 10px 0px;
+    }
+
+    #desktopImg{
+        display: none;
+    }
+    #mobileImg{
+        display: block;
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .product-content{
+        height: 400px;
+        width: 350px;
+        display: block;
+        border-top-right-radius:0px ;
+        border-bottom-left-radius:10px ;
+    }
+    #product-title{
+        font-size: 33px;
+        padding: 10px 0px 10px 0px;
+        
+    }
+}
